@@ -1,0 +1,867 @@
+-- Gui to Lua
+-- Version: 3
+-- GUi : Barko_ALT#2956
+-- Credit Script : LongPro#7176 & Jxnt#9946
+-- Instances:
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("ImageLabel")
+local Frame_3 = Instance.new("ImageLabel")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("ImageLabel")
+local Frame_6 = Instance.new("ImageLabel")
+local Frame_7 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local MaxJump = Instance.new("TextButton")
+local _Roundify_2px = Instance.new("ImageLabel")
+local FastSwing = Instance.new("TextButton")
+local _Roundify_2px_2 = Instance.new("ImageLabel")
+local AutoKarma = Instance.new("TextButton")
+local _Roundify_2px_3 = Instance.new("ImageLabel")
+local UnlockAllIsland = Instance.new("TextButton")
+local _Roundify_2px_4 = Instance.new("ImageLabel")
+local InfiniteShuriken = Instance.new("TextButton")
+local _Roundify_2px_5 = Instance.new("ImageLabel")
+local InfiniteInvisible = Instance.new("TextButton")
+local _Roundify_2px_6 = Instance.new("ImageLabel")
+local AutoSell = Instance.new("TextButton")
+local _Roundify_2px_7 = Instance.new("ImageLabel")
+local BigHead = Instance.new("TextButton")
+local _Roundify_2px_8 = Instance.new("ImageLabel")
+local AutoHoops = Instance.new("TextButton")
+local _Roundify_2px_9 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local BringAllHead = Instance.new("TextButton")
+local _Roundify_2px_10 = Instance.new("ImageLabel")
+local TPToKing = Instance.new("TextButton")
+local _Roundify_2px_11 = Instance.new("ImageLabel")
+local AutoSwing = Instance.new("TextButton")
+local _Roundify_2px_12 = Instance.new("ImageLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.4, 0.4, 1)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.2601583, 0, 0.536519408, 0)
+Frame.Size = UDim2.new(0, 512, 0, 199)
+ 
+Frame_2.Name = "Frame"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BackgroundTransparency = 1
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, -0.109999999, 0)
+Frame_2.Size = UDim2.new(0, 45, 0, 40)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.new(0.4, 0.4, 1)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+Frame_3.Name = "Frame"
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_3.BackgroundTransparency = 1
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.911937416, 0, -0.0999999642, 0)
+Frame_3.Size = UDim2.new(0, 45, 0, 40)
+Frame_3.Image = "rbxassetid://3570695787"
+Frame_3.ImageColor3 = Color3.new(0.4, 0.4, 1)
+Frame_3.ScaleType = Enum.ScaleType.Slice
+Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.new(0.4, 0.4, 1)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.033203125, 0, -0.100000076, 0)
+Frame_4.Size = UDim2.new(0, 482, 0, 19)
+ 
+Frame_5.Name = "Frame"
+Frame_5.Parent = Frame
+Frame_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_5.BackgroundTransparency = 1
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0, 0, 0.909108281, 0)
+Frame_5.Size = UDim2.new(0, 45, 0, 40)
+Frame_5.Image = "rbxassetid://3570695787"
+Frame_5.ImageColor3 = Color3.new(0.4, 0.4, 1)
+Frame_5.ScaleType = Enum.ScaleType.Slice
+Frame_5.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+Frame_6.Name = "Frame"
+Frame_6.Parent = Frame
+Frame_6.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_6.BackgroundTransparency = 1
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.912109375, 0, 0.910828054, 0)
+Frame_6.Size = UDim2.new(0, 45, 0, 40)
+Frame_6.Image = "rbxassetid://3570695787"
+Frame_6.ImageColor3 = Color3.new(0.4, 0.4, 1)
+Frame_6.ScaleType = Enum.ScaleType.Slice
+Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+Frame_7.Parent = Frame
+Frame_7.BackgroundColor3 = Color3.new(0.4, 0.4, 1)
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0.033203125, 0, 0.980891705, 0)
+Frame_7.Size = UDim2.new(0, 482, 0, 28)
+ 
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.23046875, 0, -0.127388537, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Project Autismo - Ninja Legends"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 25
+ 
+MaxJump.Name = "Max Jump"
+MaxJump.Parent = Frame
+MaxJump.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+MaxJump.BackgroundTransparency = 1
+MaxJump.BorderSizePixel = 0
+MaxJump.Position = UDim2.new(0.046875, 0, 0.235668793, 0)
+MaxJump.Size = UDim2.new(0, 126, 0, 25)
+MaxJump.Font = Enum.Font.SourceSans
+MaxJump.Text = ""
+MaxJump.TextColor3 = Color3.new(0, 0, 0)
+MaxJump.TextSize = 14
+ 
+_Roundify_2px.Name = "?_Roundify_2px"
+_Roundify_2px.Parent = MaxJump
+_Roundify_2px.Active = true
+_Roundify_2px.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px.BackgroundTransparency = 1
+_Roundify_2px.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px.Selectable = true
+_Roundify_2px.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px.Image = "rbxassetid://3570695787"
+_Roundify_2px.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+FastSwing.Name = "Fast Swing"
+FastSwing.Parent = Frame
+FastSwing.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+FastSwing.BackgroundTransparency = 1
+FastSwing.BorderSizePixel = 0
+FastSwing.Position = UDim2.new(0.048828125, 0, 0.458598733, 0)
+FastSwing.Size = UDim2.new(0, 126, 0, 25)
+FastSwing.Font = Enum.Font.SourceSans
+FastSwing.Text = ""
+FastSwing.TextColor3 = Color3.new(0, 0, 0)
+FastSwing.TextSize = 14
+ 
+_Roundify_2px_2.Name = "?_Roundify_2px"
+_Roundify_2px_2.Parent = FastSwing
+_Roundify_2px_2.Active = true
+_Roundify_2px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_2.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_2.BackgroundTransparency = 1
+_Roundify_2px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_2.Selectable = true
+_Roundify_2px_2.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_2.Image = "rbxassetid://3570695787"
+_Roundify_2px_2.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_2.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+AutoKarma.Name = "Auto Karma"
+AutoKarma.Parent = Frame
+AutoKarma.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+AutoKarma.BackgroundTransparency = 1
+AutoKarma.BorderSizePixel = 0
+AutoKarma.Position = UDim2.new(0.048828125, 0, 0.694267511, 0)
+AutoKarma.Size = UDim2.new(0, 126, 0, 25)
+AutoKarma.Font = Enum.Font.SourceSans
+AutoKarma.Text = ""
+AutoKarma.TextColor3 = Color3.new(0, 0, 0)
+AutoKarma.TextSize = 14
+ 
+_Roundify_2px_3.Name = "?_Roundify_2px"
+_Roundify_2px_3.Parent = AutoKarma
+_Roundify_2px_3.Active = true
+_Roundify_2px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_3.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_3.BackgroundTransparency = 1
+_Roundify_2px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_3.Selectable = true
+_Roundify_2px_3.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_3.Image = "rbxassetid://3570695787"
+_Roundify_2px_3.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_3.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+UnlockAllIsland.Name = "Unlock All Island"
+UnlockAllIsland.Parent = Frame
+UnlockAllIsland.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+UnlockAllIsland.BackgroundTransparency = 1
+UnlockAllIsland.BorderSizePixel = 0
+UnlockAllIsland.Position = UDim2.new(0.373046875, 0, 0.235668793, 0)
+UnlockAllIsland.Size = UDim2.new(0, 126, 0, 25)
+UnlockAllIsland.Font = Enum.Font.SourceSans
+UnlockAllIsland.Text = ""
+UnlockAllIsland.TextColor3 = Color3.new(0, 0, 0)
+UnlockAllIsland.TextSize = 14
+ 
+_Roundify_2px_4.Name = "?_Roundify_2px"
+_Roundify_2px_4.Parent = UnlockAllIsland
+_Roundify_2px_4.Active = true
+_Roundify_2px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_4.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_4.BackgroundTransparency = 1
+_Roundify_2px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_4.Selectable = true
+_Roundify_2px_4.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_4.Image = "rbxassetid://3570695787"
+_Roundify_2px_4.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_4.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+InfiniteShuriken.Name = "Infinite Shuriken"
+InfiniteShuriken.Parent = Frame
+InfiniteShuriken.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+InfiniteShuriken.BackgroundTransparency = 1
+InfiniteShuriken.BorderSizePixel = 0
+InfiniteShuriken.Position = UDim2.new(0.375, 0, 0.458598733, 0)
+InfiniteShuriken.Size = UDim2.new(0, 126, 0, 25)
+InfiniteShuriken.Font = Enum.Font.SourceSans
+InfiniteShuriken.Text = ""
+InfiniteShuriken.TextColor3 = Color3.new(0, 0, 0)
+InfiniteShuriken.TextSize = 14
+ 
+_Roundify_2px_5.Name = "?_Roundify_2px"
+_Roundify_2px_5.Parent = InfiniteShuriken
+_Roundify_2px_5.Active = true
+_Roundify_2px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_5.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_5.BackgroundTransparency = 1
+_Roundify_2px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_5.Selectable = true
+_Roundify_2px_5.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_5.Image = "rbxassetid://3570695787"
+_Roundify_2px_5.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_5.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+InfiniteInvisible.Name = "Infinite Invisible"
+InfiniteInvisible.Parent = Frame
+InfiniteInvisible.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+InfiniteInvisible.BackgroundTransparency = 1
+InfiniteInvisible.BorderSizePixel = 0
+InfiniteInvisible.Position = UDim2.new(0.375, 0, 0.694267511, 0)
+InfiniteInvisible.Size = UDim2.new(0, 126, 0, 25)
+InfiniteInvisible.Font = Enum.Font.SourceSans
+InfiniteInvisible.Text = ""
+InfiniteInvisible.TextColor3 = Color3.new(0, 0, 0)
+InfiniteInvisible.TextSize = 14
+ 
+_Roundify_2px_6.Name = "?_Roundify_2px"
+_Roundify_2px_6.Parent = InfiniteInvisible
+_Roundify_2px_6.Active = true
+_Roundify_2px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_6.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_6.BackgroundTransparency = 1
+_Roundify_2px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_6.Selectable = true
+_Roundify_2px_6.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_6.Image = "rbxassetid://3570695787"
+_Roundify_2px_6.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_6.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+AutoSell.Name = "Auto Sell"
+AutoSell.Parent = Frame
+AutoSell.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+AutoSell.BackgroundTransparency = 1
+AutoSell.BorderSizePixel = 0
+AutoSell.Position = UDim2.new(0.6953125, 0, 0.235668793, 0)
+AutoSell.Size = UDim2.new(0, 126, 0, 25)
+AutoSell.Font = Enum.Font.SourceSans
+AutoSell.Text = ""
+AutoSell.TextColor3 = Color3.new(0, 0, 0)
+AutoSell.TextSize = 14
+ 
+_Roundify_2px_7.Name = "?_Roundify_2px"
+_Roundify_2px_7.Parent = AutoSell
+_Roundify_2px_7.Active = true
+_Roundify_2px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_7.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_7.BackgroundTransparency = 1
+_Roundify_2px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_7.Selectable = true
+_Roundify_2px_7.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_7.Image = "rbxassetid://3570695787"
+_Roundify_2px_7.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_7.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+BigHead.Name = "Big Head"
+BigHead.Parent = Frame
+BigHead.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+BigHead.BackgroundTransparency = 1
+BigHead.BorderSizePixel = 0
+BigHead.Position = UDim2.new(0.697265625, 0, 0.458598733, 0)
+BigHead.Size = UDim2.new(0, 126, 0, 25)
+BigHead.Font = Enum.Font.SourceSans
+BigHead.Text = ""
+BigHead.TextColor3 = Color3.new(0, 0, 0)
+BigHead.TextSize = 14
+ 
+_Roundify_2px_8.Name = "?_Roundify_2px"
+_Roundify_2px_8.Parent = BigHead
+_Roundify_2px_8.Active = true
+_Roundify_2px_8.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_8.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_8.BackgroundTransparency = 1
+_Roundify_2px_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_8.Selectable = true
+_Roundify_2px_8.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_8.Image = "rbxassetid://3570695787"
+_Roundify_2px_8.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_8.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_8.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+AutoHoops.Name = "Auto Hoops"
+AutoHoops.Parent = Frame
+AutoHoops.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+AutoHoops.BackgroundTransparency = 1
+AutoHoops.BorderSizePixel = 0
+AutoHoops.Position = UDim2.new(0.697265625, 0, 0.694267511, 0)
+AutoHoops.Size = UDim2.new(0, 126, 0, 25)
+AutoHoops.Font = Enum.Font.SourceSans
+AutoHoops.Text = ""
+AutoHoops.TextColor3 = Color3.new(0, 0, 0)
+AutoHoops.TextSize = 14
+ 
+_Roundify_2px_9.Name = "?_Roundify_2px"
+_Roundify_2px_9.Parent = AutoHoops
+_Roundify_2px_9.Active = true
+_Roundify_2px_9.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_9.BackgroundColor3 = Color3.new(0.0588235, 0.501961, 1)
+_Roundify_2px_9.BackgroundTransparency = 1
+_Roundify_2px_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_9.Selectable = true
+_Roundify_2px_9.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_9.Image = "rbxassetid://3570695787"
+_Roundify_2px_9.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_9.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_9.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.02734375, 0, 0.159235671, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Max Jump"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 15
+ 
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.03125, 0, 0.375796169, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Fast Swing"
+TextLabel_3.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_3.TextSize = 15
+ 
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.021484375, 0, 0.633165836, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "Auto Karma - Collect Soul"
+TextLabel_4.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_4.TextSize = 9
+ 
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.298828125, 0, 0.159235671, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "Unlock All Island"
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextSize = 13
+ 
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.30078125, 0, 0.382165611, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "Infinite Shuriken"
+TextLabel_6.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_6.TextSize = 13
+ 
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.306640625, 0, 0.617834389, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.Font = Enum.Font.GothamBold
+TextLabel_7.Text = "Infinite Invisible"
+TextLabel_7.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_7.TextSize = 13
+ 
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.6171875, 0, 0.159235671, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_8.Font = Enum.Font.GothamBold
+TextLabel_8.Text = "Auto Sell"
+TextLabel_8.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_8.TextSize = 13
+ 
+TextLabel_9.Parent = Frame
+TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_9.BackgroundTransparency = 1
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.62109375, 0, 0.0854271352, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 172)
+TextLabel_9.Font = Enum.Font.GothamBold
+TextLabel_9.Text = "Big Head All"
+TextLabel_9.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_9.TextSize = 13
+ 
+TextLabel_10.Parent = Frame
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.62109375, 0, 0.611464977, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Font = Enum.Font.GothamBold
+TextLabel_10.Text = "Auto Hoops"
+TextLabel_10.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_10.TextSize = 13
+ 
+BringAllHead.Name = "Bring All Head"
+BringAllHead.Parent = Frame
+BringAllHead.BackgroundColor3 = Color3.new(1, 1, 1)
+BringAllHead.BackgroundTransparency = 1
+BringAllHead.BorderSizePixel = 0
+BringAllHead.Position = UDim2.new(0.05078125, 0, 0.864321589, 0)
+BringAllHead.Size = UDim2.new(0, 124, 0, 25)
+BringAllHead.Font = Enum.Font.SourceSans
+BringAllHead.Text = ""
+BringAllHead.TextColor3 = Color3.new(0, 0, 0)
+BringAllHead.TextSize = 14
+ 
+_Roundify_2px_10.Name = "?_Roundify_2px"
+_Roundify_2px_10.Parent = BringAllHead
+_Roundify_2px_10.Active = true
+_Roundify_2px_10.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_10.BackgroundColor3 = Color3.new(1, 1, 1)
+_Roundify_2px_10.BackgroundTransparency = 1
+_Roundify_2px_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_10.Selectable = true
+_Roundify_2px_10.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_10.Image = "rbxassetid://3570695787"
+_Roundify_2px_10.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_10.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_10.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+TPToKing.Name = "TP To King"
+TPToKing.Parent = Frame
+TPToKing.BackgroundColor3 = Color3.new(1, 1, 1)
+TPToKing.BackgroundTransparency = 1
+TPToKing.BorderSizePixel = 0
+TPToKing.Position = UDim2.new(0.376953125, 0, 0.869346738, 0)
+TPToKing.Size = UDim2.new(0, 124, 0, 25)
+TPToKing.Font = Enum.Font.SourceSans
+TPToKing.Text = ""
+TPToKing.TextColor3 = Color3.new(0, 0, 0)
+TPToKing.TextSize = 14
+ 
+_Roundify_2px_11.Name = "?_Roundify_2px"
+_Roundify_2px_11.Parent = TPToKing
+_Roundify_2px_11.Active = true
+_Roundify_2px_11.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_11.BackgroundColor3 = Color3.new(1, 1, 1)
+_Roundify_2px_11.BackgroundTransparency = 1
+_Roundify_2px_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_11.Selectable = true
+_Roundify_2px_11.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_11.Image = "rbxassetid://3570695787"
+_Roundify_2px_11.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_11.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_11.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+AutoSwing.Name = "Auto Swing"
+AutoSwing.Parent = Frame
+AutoSwing.BackgroundColor3 = Color3.new(1, 1, 1)
+AutoSwing.BackgroundTransparency = 1
+AutoSwing.BorderSizePixel = 0
+AutoSwing.Position = UDim2.new(0.6953125, 0, 0.859296501, 0)
+AutoSwing.Size = UDim2.new(0, 124, 0, 25)
+AutoSwing.Font = Enum.Font.SourceSans
+AutoSwing.Text = ""
+AutoSwing.TextColor3 = Color3.new(0, 0, 0)
+AutoSwing.TextSize = 14
+ 
+_Roundify_2px_12.Name = "?_Roundify_2px"
+_Roundify_2px_12.Parent = AutoSwing
+_Roundify_2px_12.Active = true
+_Roundify_2px_12.AnchorPoint = Vector2.new(0.5, 0.5)
+_Roundify_2px_12.BackgroundColor3 = Color3.new(1, 1, 1)
+_Roundify_2px_12.BackgroundTransparency = 1
+_Roundify_2px_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Roundify_2px_12.Selectable = true
+_Roundify_2px_12.Size = UDim2.new(1, 0, 1, 0)
+_Roundify_2px_12.Image = "rbxassetid://3570695787"
+_Roundify_2px_12.ImageColor3 = Color3.new(0.4, 1, 0.8)
+_Roundify_2px_12.ScaleType = Enum.ScaleType.Slice
+_Roundify_2px_12.SliceCenter = Rect.new(100, 100, 100, 100)
+ 
+TextLabel_11.Parent = Frame
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(-0.03125, 0, 0.798994958, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_11.Font = Enum.Font.GothamBold
+TextLabel_11.Text = "Bring All Head"
+TextLabel_11.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_11.TextSize = 13
+ 
+TextLabel_12.Parent = Frame
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.296875, 0, 0.804020107, 0)
+TextLabel_12.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_12.Font = Enum.Font.GothamBold
+TextLabel_12.Text = "TP To King"
+TextLabel_12.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_12.TextSize = 13
+ 
+TextLabel_13.Parent = Frame
+TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.623046875, 0, 0.798994958, 0)
+TextLabel_13.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_13.Font = Enum.Font.GothamBold
+TextLabel_13.Text = "Auto Swing"
+TextLabel_13.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_13.TextSize = 13
+ 
+-- Scripts:
+ 
+local function JPYCX_fake_script() -- ScreenGui.Draggable (Read)
+    local script = Instance.new('LocalScript', ScreenGui)
+ 
+    frame = script.Parent.Frame --Name of the frame you wanna move
+    frame.Draggable = true
+    frame.Active = true
+    frame.Selectable = true
+    --Place IN the gui NOT in the Frame , Other wise the script will break
+    --Thanks to TheManInCity (On youtube) by comenting on the video
+    --Thanks to me for uploading (lol)
+   
+    --Ps we know that Draggable got removed but this script somehow works :D
+end
+coroutine.wrap(JPYCX_fake_script)()
+local function OREL_fake_script() -- MaxJump.Button
+    local script = Instance.new('LocalScript', MaxJump)
+ 
+    function onButtonClicked()
+   
+    game.Players.LocalPlayer.multiJumpCount.Value = "50"
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(OREL_fake_script)()
+local function RQBIS_fake_script() -- FastSwing.Button
+    local script = Instance.new('LocalScript', FastSwing)
+ 
+    function onButtonClicked()
+   
+    for _, nig in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+     if nig:FindFirstChild("attackTime") then
+      nig.attackTime.Value = 0
+     end
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(RQBIS_fake_script)()
+local function RPYAOQ_fake_script() -- AutoKarma.Button
+    local script = Instance.new('LocalScript', AutoKarma)
+ 
+    function onButtonClicked()
+   
+    -- Whats New : Prevent Break , Improved Alot And Alot Faster! Support All Exploits , souls changeable
+   
+   
+    local VirtualUser = game:GetService("VirtualUser")
+    local players = game.Players:GetPlayers()
+    local player = game.Players.LocalPlayer
+    local soulType = "Bad" -- Good or Bad , Change this only
+    local lplr = ""
+    local jplr = ""
+    _G.Enabled = true
+   
+    local function check()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+     if v.ClassName == "Tool" and v:FindFirstChild("attackKatanaScript") then
+       game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)                            
+        end
+       end
+      end
+   
+    while _G.Enabled and wait(.4) do
+   
+    game.Players.PlayerRemoving:Connect(function(player)
+            lplr = (player.Name)
+            players = game.Players:GetPlayers()
+    end)
+   
+    game.Players.PlayerAdded:Connect(function(player)
+            jplr = (player.Name)
+            players = game.Players:GetPlayers()
+    end)
+   
+    players = game.Players:GetPlayers()
+    game:service'RunService'.Stepped:Connect(function()
+            if player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+                player.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    for _, v in pairs(players) do
+        if v.Name ~= player.Name and v.Name ~= lplr and v.Name ~= jplr and workspace[v.Name]:FindFirstChild("Head") then
+               v.Character.Head.CanCollide = false
+               v.Character.Head.Anchored = true
+               v.Character.Head.CFrame = player.Character.HumanoidRootPart.CFrame + Vector3.new(3,0,0)
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton1(Vector2.new(0, 0), CFrame.new(Vector3.new(0, 0, 0)))
+    end
+    end
+   
+    for _,v in pairs(game.Workspace.soulPartsFolder:GetChildren()) do
+    if v.Name == "soulPart" and v.collectPlayers:FindFirstChild(player.Name) then
+    if not v:FindFirstChild("isGoodKarma") and soulType == "Bad" then
+       player.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0,5,0)
+       game.Players.LocalPlayer.ninjaEvent:FireServer("collectSoul", v)
+    elseif v:FindFirstChild("isGoodKarma") and soulType == "Good" then
+       player.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0,5,0)
+       game.Players.LocalPlayer.ninjaEvent:FireServer("collectSoul", v)
+    end
+    end
+    end
+    check()
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(RPYAOQ_fake_script)()
+local function XFVCM_fake_script() -- UnlockAllIsland.Button
+    local script = Instance.new('LocalScript', UnlockAllIsland)
+ 
+    function onButtonClicked()
+   
+   
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Enchanted Island"].CFrame
+    wait(.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Astral Island"].CFrame
+    wait(.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Mystical Island"].CFrame
+    wait(.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Space Island"].CFrame
+    wait(.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Tundra Island"].CFrame
+    wait(.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Eternal Island"].CFrame
+    wait(.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").islandUnlockParts["Sandstorm"].CFrame
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(XFVCM_fake_script)()
+local function BTWWOA_fake_script() -- InfiniteShuriken.Button
+    local script = Instance.new('LocalScript', InfiniteShuriken)
+ 
+    function onButtonClicked()
+   
+   
+    while true do
+        wait(.001)
+    game.Players.LocalPlayer.shurikenAmmoCount.Value = "9999"
+    game.Players.LocalPlayer.maxShurikenAmmo.Value = "9999"
+   
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(BTWWOA_fake_script)()
+local function IIWOV_fake_script() -- InfiniteInvisible.Button
+    local script = Instance.new('LocalScript', InfiniteInvisible)
+ 
+    function onButtonClicked()
+   
+    -- Whats New : Prevent Break , Improved Alot And Alot Faster! Support All Exploits , souls changeable
+   
+   
+    while true do
+        wait(.0001)
+    local A_1 = "goInvisible"
+    local Event = game.Players.LocalPlayer.ninjaEvent
+    Event:FireServer(A_1)
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(IIWOV_fake_script)()
+local function HZSRW_fake_script() -- AutoSell.Button
+    local script = Instance.new('LocalScript', AutoSell)
+ 
+    function onButtonClicked()
+   
+   
+    _G.sell = true
+    while _G.sell do
+    wait()
+    game.workspace["sellAreaCircle"].circleInner.CFrame = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(HZSRW_fake_script)()
+local function DSQZ_fake_script() -- BigHead.Button
+    local script = Instance.new('LocalScript', BigHead)
+ 
+    function onButtonClicked()
+   
+   
+    local head = Misc:Button("Big Head All", function()
+    while wait(1) do
+        for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+            if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+                v.Character.Head.CanCollide = false
+                v.Character.Head.Size = Vector3.new(5, 5, 5)
+                v.Character.Head.Transparency = 0
+            end
+        end
+    end
+    end)
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(DSQZ_fake_script)()
+local function GYBNA_fake_script() -- AutoHoops.Button
+    local script = Instance.new('LocalScript', AutoHoops)
+ 
+    function onButtonClicked()
+   
+   
+    _G.Hoops = true
+    while _G.Hoops do
+    local stuff = workspace.Hoops:getChildren()
+    for i = 1, #stuff do
+       if _G.Hoops then
+          for i = 1, 10 do
+             stuff[i].touchPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+             wait()
+          end
+       end
+       wait()
+    end
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(GYBNA_fake_script)()
+local function JZEWJVU_fake_script() -- BringAllHead.Button
+    local script = Instance.new('LocalScript', BringAllHead)
+ 
+    function onButtonClicked()
+   
+   
+    --_G.heads = true --Remove for loop "--" for loop
+    --while _G.heads do --Remove for loop "--" for loop
+    --wait(0.1) --Remove for loop "--" for loop
+     
+            local pos = 5, 0, 5
+            local player = game.Players:GetChildren()
+            for i = 1, #player do
+                if player[i].Name ~= game.Players.LocalPlayer.Name then
+                    local part = player[i].Character.Head
+                    part.Transparency = 0
+                    part.Material = "Neon"
+                    part.CanCollide = false
+                    part.Anchored = true
+                    part.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(pos)
+                end
+            end
+    --end --Remove for loop "--" for loop
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(JZEWJVU_fake_script)()
+local function FCDRKGV_fake_script() -- TPToKing.Button
+    local script = Instance.new('LocalScript', TPToKing)
+ 
+    function onButtonClicked()
+   
+   
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").kingOfTheHillPart.CFrame
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(FCDRKGV_fake_script)()
+local function PNCSTSP_fake_script() -- AutoSwing.Button
+    local script = Instance.new('LocalScript', AutoSwing)
+ 
+    function onButtonClicked()
+   
+   
+    _G.swing = true
+    while _G.swing do
+    wait()
+    game.Players.LocalPlayer.ninjaEvent:FireServer("swingKatana")
+    end
+    end
+   
+    script.Parent.MouseButton1Click:connect(onButtonClicked)
+end
+coroutine.wrap(PNCSTSP_fake_script)()
